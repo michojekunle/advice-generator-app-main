@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config ={
+      theme: {
+        colors : {
+          lightCyan: 'hsl(193, 38%, 86%)',
+          neonGreen: 'hsl(150, 100%, 66%)',
+          grayishBlue: 'hsl(217, 19%, 38%)',
+          darkGrayishBlue: 'hsl(217, 19%, 24%)',
+          darkBlue: 'hsl(218, 23%, 16%)'
+        },
+        extend: {
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif']
+          },
+          boxShadow: {
+            '3xl': '0 35px 60px -15px hsl(150, 100%, 66%) ',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="flex items-center bg-darkBlue justify-center min-h-screen flex-col font-manrope h-120%">
+    <div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div>
+    <div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
+      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
+      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
+      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
+      <div class="generate-advice translate-y-12 ">
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+      </div>      
+    </div>  
+    <div class="attribution mt-6 translate-y-12 text-lightCyan text-base">
+      Challenge by <a class="text-grayishBlue" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="text-grayishBlue" href="https://github.com/michojekunle" target="_blank">AMD</a>. 
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
