@@ -61,7 +61,7 @@ const generateAdvice = () => {
 }
 
 // Added event Listener that listens for a click event on the dice Button
-diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('aniamte-pulse'); generateAdvice();});
+diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('animate-pulse'); generateAdvice();});
 
 //Added Event Listener to listen for slideshow event on click of the slideshow button 
 slideShow.addEventListener('click', () => {
