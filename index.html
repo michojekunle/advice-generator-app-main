@@ -33,7 +33,7 @@
             manrope: ['Manrope', 'sans-serif']
           },
           boxShadow: {
-            '3xl': '0 35px 60px -15px hsl(150, 100%, 66%) ',
+            '3xl': '0 0 20px 4px hsl(150, 100%, 66%) 0 0 20px 4px hsl(150, 100%, 66%)  0 0 20px 4px hsl(150, 100%, 66%) 0 0 20px 4px hsl(150, 100%, 66%) ',
           }
         }
       }
@@ -41,50 +41,16 @@
   </script>
 </head>
 <body class="flex items-center bg-darkBlue justify-center min-h-screen flex-col font-manrope h-120%">
+    <button id="slideshow" class="rounded py-2 px-3 bg-neonGreen text-lightCyan">Slideshow</button>
+
     <div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
       <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
       <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
       <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
       <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
+        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-3xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
       </div>      
     </div>
-    <div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
-      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
-      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
-      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
-      <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
-      </div>      
-    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
-      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
-      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
-      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
-      <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
-      </div>      
-    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
-      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
-      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
-      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
-      <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
-      </div>      
-    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
-      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
-      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
-      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
-      <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
-      </div>      
-    </div><div class="bg-darkGrayishBlue flex flex-col items-center justify-center rounded-2xl p-6 w-11/12 max-w-xl">
-      <p class="text-neonGreen uppercase mb-2 text-xl">Advice #<span id="adviceID">117</span></p>
-      <h3 class="text-3xl text-center my-5 text-lightCyan w-11/12" id="adviceText">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</h3>
-      <img class="mt-6" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
-      <div class="generate-advice translate-y-12 ">
-        <button class="cursor-pointer bg-neonGreen rounded-full p-5 hover:shadow-2xl hover:shadow-neonGreen" id="generateAdviceButton"><img src="./images/icon-dice.svg" alt="dice"></button>
-      </div>      
-    </div>  
     <div class="attribution mt-6 translate-y-12 text-lightCyan text-base">
       Challenge by <a class="text-grayishBlue" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a class="text-grayishBlue" href="https://github.com/michojekunle" target="_blank">AMD</a>. 
