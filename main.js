@@ -60,7 +60,7 @@ slideShow.addEventListener('click', () => {
     slideShow.classList.toggle('animate-ping');
 
     audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)-1];    
-    
+
     generateAdvice();
     const slideshowInterval = setInterval( () => {
         if(showSlideshow) {
