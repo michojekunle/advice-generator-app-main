@@ -53,13 +53,14 @@ const generateAdvice = () => {
     xhr.send();
 }
 
-diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('aniamte-ping'); generateAdvice();});
+diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('aniamte-pulse'); generateAdvice();});
 
 slideShow.addEventListener('click', () => {
     showSlideshow = !showSlideshow;
-    slideShow.classList.toggle('animate-ping');
+    slideShow.classList.toggle('animate-pulse');
 
-    audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)-1];    
+    audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)];    
+    // audio.src = audioSrc[4];
 
     generateAdvice();
     const slideshowInterval = setInterval( () => {
