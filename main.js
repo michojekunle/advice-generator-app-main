@@ -33,7 +33,6 @@ const audio = new Audio();
 
 //Defining sources for audios
 const audioSrc = [
-    'audios/Cinematic-Indie.mp3',
     'audios/tunetank_53 (1).mp3',
     'audios/tunetank_53 (2).mp3',
     'audios/tunetank_53 (3).mp3',
