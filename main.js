@@ -1,3 +1,6 @@
+//Configuration For tailwind css
+//Added custom colors, font-Family and box-shadow
+
 tailwind.config ={
     theme: {
       colors : {
@@ -18,13 +21,17 @@ tailwind.config ={
     }
   }
 
+//Selecting HTML DOM elements
 const diceButton = document.querySelector('#generateAdviceButton');
 const slideShow = document.querySelector('#slideshow');
 
+//Initializing slideshow to false on page load
 let showSlideshow = false;
 
+//creating a new Audio Object
 const audio = new Audio();
 
+//Defining sources for audios
 const audioSrc = [
     'audios/Cinematic-Indie.mp3',
     'audios/tunetank_53 (1).mp3',
@@ -34,43 +41,46 @@ const audioSrc = [
     'audios/tunetank_53 (5).mp3',
 ];
 
+//Function to generate Advice
 const generateAdvice = () => {
+    //Fetching data with AJAX
     const xhr = new XMLHttpRequest();
 
     xhr.addEventListener('loadend', () => {
         console.log(JSON.parse(xhr.response));
         const data = JSON.parse(xhr.response);
 
-        const { slip: { id, advice } } = data;
+        const { slip: { id, advice } } = data; //destructuring the needed data from data
         
+        //Updating DOM Elments
         document.getElementById('adviceID').innerText = id;
         document.getElementById('adviceText').innerText = `"${advice}"`;
-
-
     })
     
     xhr.open('GET', 'https://api.adviceslip.com/advice', true);
-    xhr.send();
+    xhr.send(); //Sending the request
 }
 
+// Added event Listener that listens for a click event on the dice Button
 diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('aniamte-pulse'); generateAdvice();});
 
+//Added Event Listener to listen for slideshow event on click of the slideshow button 
 slideShow.addEventListener('click', () => {
     showSlideshow = !showSlideshow;
-    slideShow.classList.toggle('animate-pulse');
+    slideShow.classList.toggle('animate-pulse');//Added pulse animation whenever the slideshow button is clicked
 
-    audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)];    
-    // audio.src = audioSrc[4];
-
+    audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)];//This generates a random src file and assigns it to the src attribute of the audio   
+    
+    //Generates an advice first and then waits for 5secs for the next advice to be generated.
     generateAdvice();
+    
     const slideshowInterval = setInterval( () => {
         if(showSlideshow) {
             generateAdvice();
             audio.play();
             audio.loop = true; 
         }   
-    }, 8000);
+    }, 8000);//Interval for the loop of generating advices
 });
-
 
 
