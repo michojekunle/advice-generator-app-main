@@ -53,11 +53,14 @@ const generateAdvice = () => {
     xhr.send();
 }
 
-diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); generateAdvice();});
+diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('aniamte-ping'); generateAdvice();});
 
 slideShow.addEventListener('click', () => {
     showSlideshow = !showSlideshow;
+    slideShow.classList.toggle('animate-ping');
+
     audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)-1];    
+    
     generateAdvice();
     const slideshowInterval = setInterval( () => {
         if(showSlideshow) {
@@ -67,4 +70,6 @@ slideShow.addEventListener('click', () => {
         }   
     }, 8000);
 });
+
+
 
