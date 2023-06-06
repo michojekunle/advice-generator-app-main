@@ -71,7 +71,7 @@ diceButton.addEventListener('click', () => {
     diceButton.classList.remove('shadow-neonGreen');
     diceButton.classList.remove('animate-pulse');
     
-    //Generate Advice      
+    //Generate Advice    
     generateAdvice();
 });
 
