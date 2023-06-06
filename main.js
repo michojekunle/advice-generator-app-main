@@ -62,7 +62,7 @@ const generateAdvice = () => {
 
 // Added event Listener that listens for a click event on the dice Button
 diceButton.addEventListener('click', () => {
-    showSlideshow = !showSlideshow; 
+    showSlideshow = false; 
     audio.pause(); 
     
     // Add Shadow && Animation to the button
