@@ -61,13 +61,31 @@ const generateAdvice = () => {
 }
 
 // Added event Listener that listens for a click event on the dice Button
-diceButton.addEventListener('click',() => {showSlideshow = false; audio.pause(); slideShow.classList.remove('animate-pulse'); generateAdvice();});
+diceButton.addEventListener('click', () => { 
+    showSlideshow = false; 
+    audio.pause(); 
+    slideShow.classList.remove('animate-pulse'); 
+    
+    // Add Shadow && Animation to the button
+    diceButton.classList.remove('shadow-3xl');
+    diceButton.classList.remove('shadow-neonGreen');
+    diceButton.classlist.remove('animate-pulse');
+    
+    //Generate Advice      
+    generateAdvice();
+});
 
 //Added Event Listener to listen for slideshow event on click of the slideshow button 
 slideShow.addEventListener('click', () => {
     showSlideshow = !showSlideshow;
     slideShow.classList.toggle('animate-pulse');//Added pulse animation whenever the slideshow button is clicked
-
+    
+    // Add Shadow && Animation to the button
+    diceButton.classList.toggle('shadow-3xl');
+    diceButton.classList.toggle('shadow-neonGreen');
+    diceButton.classlist.toggle('animate-pulse');
+    
+    //get and set random audio
     audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)];//This generates a random src file and assigns it to the src attribute of the audio   
     
     //Generates an advice first and then waits for 5secs for the next advice to be generated.
