@@ -83,7 +83,7 @@ slideShow.addEventListener('click', () => {
     // Add Shadow && Animation to the button
     diceButton.classList.toggle('shadow-3xl');
     diceButton.classList.toggle('shadow-neonGreen');
-    diceButton.classlist.toggle('animate-pulse');
+    diceButton.classList.toggle('animate-pulse');
     
     //get and set random audio
     audio.src = audioSrc[Math.floor(Math.random() * audioSrc.length)];//This generates a random src file and assigns it to the src attribute of the audio   
