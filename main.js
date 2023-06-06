@@ -61,24 +61,24 @@ const generateAdvice = () => {
 }
 
 // Added event Listener that listens for a click event on the dice Button
-diceButton.addEventListener('click', () => { 
-    showSlideshow = false; 
+diceButton.addEventListener('click', () => {
+    showSlideshow = !showSlideshow; 
     audio.pause(); 
-    slideShow.classList.remove('animate-pulse'); 
     
     // Add Shadow && Animation to the button
     diceButton.classList.remove('shadow-3xl');
     diceButton.classList.remove('shadow-neonGreen');
     diceButton.classList.remove('animate-pulse');
     
-    //Generate Advice    
-    generateAdvice();
+    // Generate Advice if slideshow is not going on    
+    if(!showSlideshow) {
+        generateAdvice();    
+    }
 });
 
 //Added Event Listener to listen for slideshow event on click of the slideshow button 
 slideShow.addEventListener('click', () => {
     showSlideshow = !showSlideshow;
-    slideShow.classList.toggle('animate-pulse');//Added pulse animation whenever the slideshow button is clicked
     
     // Add Shadow && Animation to the button
     diceButton.classList.toggle('shadow-3xl');
