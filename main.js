@@ -69,7 +69,7 @@ diceButton.addEventListener('click', () => {
     // Add Shadow && Animation to the button
     diceButton.classList.remove('shadow-3xl');
     diceButton.classList.remove('shadow-neonGreen');
-    diceButton.classlist.remove('animate-pulse');
+    diceButton.classList.remove('animate-pulse');
     
     //Generate Advice      
     generateAdvice();
